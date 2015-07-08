@@ -1,13 +1,15 @@
-# localhapi
+# Localhapi
 A local hapijs server on any filesystem or port
 
+# Install
 1. cd ~/
 2. git clone https://github.com/diverted247/localhapi.git
 3. cd localhapi
 4. npm install
 5. Add to ~./bash_profile
 
-`startLocalServer() {
+```
+startLocalServer() {
     if [ "$#" == 0 ]
     then
         local PORT=8888
@@ -20,9 +22,12 @@ A local hapijs server on any filesystem or port
 alias _w=startLocalServer
 #_w      --> Opens HTTP server at path on port 8888
 #_w 9000 --> Opens HTTP server at path on port 9000
-`
-6. Open new console
-7. '_w 9000' or '_w' on any directory
+```
+
+# Use
+1. Open new console to any direcory
+2. '$ _w' run server
+3. '$ _w 9000' run server on specific port or 
 
 Edit to your needs!
 
