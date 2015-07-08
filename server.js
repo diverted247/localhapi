@@ -1,7 +1,7 @@
-var Hapi = require('hapi');
-var exec = require('child_process').exec;
+var Hapi = require( 'hapi' );
+var exec = require( 'child_process' ).exec;
 
-var port = process.argv[ 2 ]
+var port = process.argv[ 2 ];
 if( port == undefined ){
     port = 8888;
 }
@@ -23,8 +23,8 @@ server.route({
 });
 
 server.start( function(){
-    console.log( 'Server running at:' , server.info.uri );
-    console.log( 'Server root:' , root );
-    exec( "open http://localhost:" + port  , function(error, stdout, stderr) {
+    console.log( 'Server address:' , server.info.uri );
+    console.log( 'Server directory:' , root );
+    exec( "open http://localhost:" + port  , function( error , stdout , stderr ){
     });
 });
