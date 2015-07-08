@@ -17,7 +17,10 @@ server.route({
     path: '/{path*}',
     handler: {
         directory: {
-            path: root,
+            path: function( request ){
+                console.log( ' > ' + new Date().getTime() + ' ' + request.path );
+                return root
+            },
             listing:true,
             index:[ 'index.html' , 'default.html' ]
         }
