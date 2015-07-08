@@ -7,7 +7,8 @@ A local hapijs server on any filesystem or port
 4. npm install
 5. Add to ~./bash_profile
 
-`startLocalServer() {
+```
+startLocalServer() {
     if [ "$#" == 0 ]
     then
         local PORT=8888
@@ -20,7 +21,7 @@ A local hapijs server on any filesystem or port
 alias _w=startLocalServer
 #_w      --> Opens HTTP server at path on port 8888
 #_w 9000 --> Opens HTTP server at path on port 9000
-`
+```
 6. Open new console
 7. '_w 9000' or '_w' on any directory
 
