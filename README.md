@@ -1,7 +1,7 @@
-# localhapi
+# Localhapi
 A local hapijs server on any filesystem or port
 
-# install
+# Install
 1. cd ~/
 2. git clone https://github.com/diverted247/localhapi.git
 3. cd localhapi
