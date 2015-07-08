@@ -1,6 +1,7 @@
 # localhapi
 A local hapijs server on any filesystem or port
 
+# install
 1. cd ~/
 2. git clone https://github.com/diverted247/localhapi.git
 3. cd localhapi
@@ -22,8 +23,10 @@ alias _w=startLocalServer
 #_w      --> Opens HTTP server at path on port 8888
 #_w 9000 --> Opens HTTP server at path on port 9000
 ```
-6. Open new console
-7. '_w 9000' or '_w' on any directory
+
+# Use
+1. Open new console
+2. '_w 9000' or '_w' on any directory
 
 Edit to your needs!
 
