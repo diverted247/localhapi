@@ -28,7 +28,7 @@ server.route({
 });
 
 server.start( function(){
-    console.log( 'Server address:' , server.info.uri );
+    console.log( 'Server address: http://localhost:' + port );
     console.log( 'Server directory:' , root );
     if( isWin ){
         exec( "start http://localhost:" + port  , function( error , stdout , stderr ){});
