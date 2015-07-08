@@ -1,0 +1,12 @@
+{
+  "name": "localhapi",
+  "version": "1.0.0",
+  "description": "Use Hapi as a general purpose localhost web server",
+  "main": "server.js",
+  "author": "Ted Patrick <ted@tedpatrick.com> (http://tedpatrick.com/)",
+  "license": "BSD",
+  "dependencies": {
+    "hapi": "^8.8.0"
+  },
+  "repository": "diverted247/localhapi"
+}
