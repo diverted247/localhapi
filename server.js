@@ -13,12 +13,12 @@ server.connection({ port: port });
 var root = process.cwd() + '/';
 
 server.route({
-    method: 'GET',
+    method: '*',
     path: '/{path*}',
     handler: {
         directory: {
             path: function( request ){
-                console.log( ' > ' + new Date().getTime() + ' ' + request.path );
+                console.log( ' > ' + new Date().getTime() + ' ' + request.method.toUpperCase() + ' ' + request.path );
                 return root
             },
             listing:true,
