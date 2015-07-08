@@ -25,8 +25,9 @@ alias _w=startLocalServer
 ```
 
 # Use
-1. Open new console
-2. '_w 9000' or '_w' on any directory
+1. Open new console to any direcory
+2. '$ _w' run server
+3. '$ _w 9000' run server on specific port or 
 
 Edit to your needs!
 
