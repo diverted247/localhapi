@@ -1,6 +1,8 @@
 var Hapi = require( 'hapi' );
 var exec = require( 'child_process' ).exec;
 
+var isWin = /^win/.test( process.platform );
+
 var port = process.argv[ 2 ];
 if( port == undefined ){
     port = 8888;
@@ -25,6 +27,9 @@ server.route({
 server.start( function(){
     console.log( 'Server address:' , server.info.uri );
     console.log( 'Server directory:' , root );
-    exec( "open http://localhost:" + port  , function( error , stdout , stderr ){
-    });
+    if( isWin ){
+        exec( "start http://localhost:" + port  , function( error , stdout , stderr ){});
+    }else{
+        exec( "open http://localhost:" + port  , function( error , stdout , stderr ){});
+    }
 });
