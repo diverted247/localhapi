@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 var Hapi = require( 'hapi' );
 var exec = require( 'child_process' ).exec;
 
