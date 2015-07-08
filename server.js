@@ -17,7 +17,7 @@ server.route({
         directory: {
             path: root,
             listing:true,
-            index:true
+            index:[ 'index.html' , 'default.html' ]
         }
     }
 });
