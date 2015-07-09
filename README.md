@@ -9,6 +9,6 @@ A local hapijs server on any filesystem or port
 2. '_w' run server
 3. '_w 9000' run server on specific port
 
-Edit to your needs!
+Cheers!
 
 Ted :)
