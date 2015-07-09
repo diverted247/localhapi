@@ -1,16 +1,27 @@
 {
   "name": "localhapi",
-  "version": "1.1.1",
   "description": "Use Hapi as a general purpose localhost web server",
-  "main": "server.js",
+  "version": "1.1.1",
   "author": "Ted Patrick <ted@tedpatrick.com> (http://tedpatrick.com/)",
-  "license": "BSD",
+  "bin": {
+    "_w": "server.js"
+  },
+  "bugs": {
+    "url": "https://github.com/diverted247/localhapi/issues"
+  },
   "dependencies": {
     "hapi": "^8.8.0"
   },
-  "repository": "diverted247/localhapi",
+  "devDependencies": {
+    "eslint": "0.24.0"
+  },
+  "homepage": "https://github.com/diverted247/localhapi#readme",
+  "license": "BSD-3-Clause",
+  "main": "server.js",
   "preferGlobal": true,
-  "bin": {
-    "_w": "server.js"
+  "repository": "diverted247/localhapi",
+  "scripts": {
+    "lint": "eslint .",
+    "start": "node server"
   }
 }
