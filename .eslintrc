@@ -1,0 +1,7 @@
+env:
+  node: true
+
+rules:
+  indent: [2, 4]
+  no-unused-vars: [2, {vars: all, args: none}]
+  quotes: [2, single]
